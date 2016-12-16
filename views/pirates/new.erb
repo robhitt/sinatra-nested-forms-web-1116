@@ -1,1 +1,28 @@
-<h1>Make your form here</h1>
+<h1>
+  <form class="" action="/pirates" method="post">
+    <label for="name">Pirate Name: </label><input type="text" name="pirate[name]" value=""><br>
+    <label for=“weight”>Pirate Weight: </label><input type="text" name="pirate[weight]" value=""><br>
+    <label for=“height”>Pirate Height: </label><input type="text" name="pirate[height]" value=""><br>
+
+    <br>
+
+    <label for=“ship_name”>Ship Name: </label><input type="text" id="ship_name_1" name="pirate[ships][][name]" value=""><br>
+    <label for=“ship_type”>Ship Type: </label><input type="text" id="ship_type_1" name="pirate[ships][][type]" value=""><br>
+    <label for=“ship_booty”>Ship Booty: </label><input type="text" id="ship_booty_1" name="pirate[ships][][booty]" value=""><br>
+    <br>
+    <label for=“ship_name”>Ship Name: </label><input type="text" id="ship_name_2" name="pirate[ships][][name]" value=""><br>
+    <label for=“ship_type”>Ship Type: </label><input type="text" id="ship_type_2" name="pirate[ships][][type]" value=""><br>
+    <label for=“ship_booty”>Ship Booty: </label><input type="text" id="ship_booty_2" name="pirate[ships][][booty]" value=""><br>
+
+    <p><button type="submit" name="button">Submit</button></p>
+  </form>
+</h1>
+
+
+<!--
+- one instance of the Pirate class
+- and two instances of the Ship class
+
+<label for=“title”>Title</label>
+            <input type="text" name="book[title]">
+-->
